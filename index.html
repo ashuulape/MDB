@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="Film-Roll-PNG-Image.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MDb Movie Search</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+
+  <div class="sidebar" id="sidebar">
+    <a href="#home" id="home-link">Home</a>
+    <a href="#movies" id="movies-link">Latest Movies</a>
+    <a href="#upcoming" id="upcoming-link">Upcoming Movies</a>
+    <a href="#tv-shows" id="tv-shows-link">TV Shows</a>
+    <a href="#about" id="about-link">About</a>
+    <a href="https://piratesharbour69.netlify.app/index.html" id="pirate-movie">Pirate Movies <img id="ship"src="ship.png" alt=""></a>
+    <div class="contact-section">
+     
+      <h3>Contact</h3>
+      <div class="contact-links">
+        <a href="https://github.com/ashuulape" target="_blank"> GitHub</a>
+        <a href="https://www.linkedin.com/in/ashutosh-ulape-6b43a4325/" target="_blank">LinkedIn</a>
+        <a href="mailto:ashuulape@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="sitename"><h1> <img id="logo" src="Film-Roll-PNG-Image.png" alt="" width="50px" onclick="showHome()" >MDb Movie Search</h1></div>
+
+  <div id="webname">
+    <input type="text" id="query" autocomplete="off" placeholder="Enter movie title" />
+    <button id="searchBtn" type="submit">Search</button>
+  </div>
+
+  <div class="home-section" id="home-section">
+    <h2 id="h2">Welcome to MDb Movie Search</h2>
+    <p>Discover the latest movies, upcoming releases, and popular TV shows.</p>
+    <p>you can also get download links of the movie</p>
+  </div>
+
+  <div class="about-section" id="about-section">
+    <h2>About MDb Movie Search</h2>
+    <p>MDb Movie Search is a simple website that lets you find the latest movies, upcoming releases, and TV shows. Powered by TMDb API.</p>
+    <h2>&#8226; Thank You &#8226;</h2>
+  </div>
+
+ <a id="link"><div class="movies" id="movies" style="display: none; " onclick="openLink()" title="click to get download links"></div></a> 
+
+  <script src="script.js"></script>
+
+</body>
+</html>
